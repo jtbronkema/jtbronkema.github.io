@@ -1,20 +1,49 @@
+<!DOCTYPE html>
 <html>
-  
-  <head> 
-    <title> Jackson Bronkema's Portfolio </title>
-      
-  </head>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+</head>
 <body>
-  <h1> Jackson Bronkema's Portfolio </h1>
-<img src="Headshot1.jpg" alt="Professional Headshot">
-<h2> <u> About Me </u> </h2>
-I am currently a full-time student pursuing an MS in Business Analytics and Information Managment (BAIM) <br> 
-from the Krannert School of Management at Purdue University. Having studied Mathematics and Business <br>
-Manangement Systems at Taylor University, I am very interested in creating statistical models from large <br>
-datasets to help drive businessoutcomes and decisions. Upon graduation from Purdue in May of 2022, I will <br>
-be pursuing a job in the Supply Chain field as a Data Scientist. I really enjoy going for walks with my wife, <br>
-watching football on the weeks, and playing board games!
-  <h2> Portfolio </h2>
-  <h2> Interests and Hobbies </h2>
-  </body>
+
+<h2>Two Unequal Columns</h2>
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+</body>
 </html>
