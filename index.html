@@ -15,24 +15,28 @@
 .column {
   float: left;
   padding: 10px;
+  height: 1000px;
   
 }
-
-.left {
-  width: 33%;
-  height: 100%;
-}
-
-.right {
-  width: 67%;
-  height: 100%;
-}
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
+}
+.left {
+  width: 33%;
+}
+
+.right {
+  width: 67%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
 </style>
 </head>
